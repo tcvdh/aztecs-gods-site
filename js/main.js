@@ -1,4 +1,4 @@
-import { addresses, amount } from './custommerkle.js?ver=1.0.0'
+import { addresses, amount } from './custommerkle.js?ver=1.2.0'
 let whitelistAddresses = []
 for (let i = 0; i < addresses.length; i++) {
   whitelistAddresses.push(ethers.utils.solidityKeccak256(['uint256', 'address', 'uint256'], [i, addresses[i], amount[i]]))
@@ -315,14 +315,11 @@ async function random() {
         buttonelement.style.backgroundColor =  "rgba(235, 126, 131, 0.19)";
         // console.log(currentIndex)
         var CLayer = document.getElementById(`layer${currentIndex}`).getContext("2d");
-        // console.log(CLayer)
         CLayer.clearRect(0, 0, 512, 512);
         var img = new Image();
         img.src = `../Downsized/${selectedType}/${buildLayers[currentIndex]}/${amount[randoId]}`
-        console.log(img)
         await new Promise((resolve) => {
             img.onload = function() {
-                console.log(img)
                 CLayer.drawImage(img, 0, 0, 512, 512);
                 // L1.drawImage(img, 0, 0, 512, 512);
                 resolve()
