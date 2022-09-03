@@ -376,6 +376,15 @@ async function mint() {
 
 async function freeMint() {
     document.getElementById("mintNow").value = "Please Wait..."
+    var uniqueDNA = [];
+    uniqueDNA.push(returnSelectedTypeNumber())
+    uniqueDNA.push(layerId[0])
+    uniqueDNA.push(layerId[1])
+    uniqueDNA.push(layerId[2])
+    uniqueDNA.push(layerId[3])
+    uniqueDNA.push(layerId[5])
+    uniqueDNA.push(layerId[6])
+    uniqueDNA.push(layerId[9])
     for (let i = 0; i < layerId.length; i++) {
         if(layerId[i] > 500) {
             console.log(layerId[i])
@@ -387,11 +396,12 @@ async function freeMint() {
     const idString = layerId.join();
     console.log(idString)
     const DNAToCheck = `${returnSelectedTypeNumber()}${layerId.join("")}`
+    console.log(uniqueDNA.join(''))
 
     const signer = provider.getSigner();
     const mintContract = new ethers.Contract("0xA031Be7C66fE1d915A68Aaea7A7597f1b612e699", GODABI, signer)
 
-    const DNAcheck = await mintContract.DNAexists(DNAToCheck);
+    const DNAcheck = await mintContract.DNAexists(uniqueDNA.join(''));
     console.log(DNAcheck)
 
     if(DNAcheck == true) {
@@ -435,7 +445,7 @@ document.getElementById("myModal").onclick = log;
 
 document.getElementById("connect").onclick = main;
 document.getElementById("connect2").onclick = main;
-document.getElementById("hellosir").onclick = log;
+// document.getElementById("hellosir").onclick = log;
 document.getElementById("mintNow").onclick = freeMint;
 
 document.getElementById("randomIt").onclick = random;
