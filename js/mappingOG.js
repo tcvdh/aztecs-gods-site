@@ -1,4 +1,4 @@
-export const femaleMaskedOG = {
+const femaleMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -168,7 +168,7 @@ export const femaleMaskedOG = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -487,7 +487,7 @@ export const femaleMaskedOG = {
     "Balls.png",
     "Big Purple Feather.png",
     "Climber.png",
-    "Duck Fluorite .png",
+    "Duck Fluorite.png",
     "Duck Gold.png",
     "Duck Rubi.png",
     "Feather Pink.png",
@@ -579,7 +579,7 @@ export const femaleMaskedOG = {
     "Jaguar Yellow Green.png",
     "Jaguar Yellow Red.png",
     "Owl Blue.png",
-    "Owl Blue2.png",
+    "placeholder",
     "Owl Bright.png",
     "Owl Brown.png",
     "Owl Gray.png",
@@ -636,7 +636,7 @@ export const femaleMaskedOG = {
     "Rare Mosaic Gold.png"
   ]
 }
-export const femaleNoMaskedOG = {
+const femaleNoMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -806,7 +806,7 @@ export const femaleNoMaskedOG = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -1166,7 +1166,7 @@ export const femaleNoMaskedOG = {
     "Balls.png",
     "Big Purple Feather.png",
     "Climber.png",
-    "Duck Fluorite .png",
+    "Duck Fluorite.png",
     "Duck Gold.png",
     "Duck Rubi.png",
     "Feather Pink.png",
@@ -1202,7 +1202,7 @@ export const femaleNoMaskedOG = {
     "None.png"
   ]
 }
-export const maleMaskedOG = {
+const maleMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1377,7 +1377,7 @@ export const maleMaskedOG = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -1449,7 +1449,7 @@ export const maleMaskedOG = {
     "Boards Ivory.png",
     "Boards Jade.png",
     "Boards Obsidian.png",
-    "Boards Rubi 2.png",
+    "placeholder",
     "Boards Rubi.png",
     "Boards Side Gold.png",
     "Boards Turquoise.png",
@@ -1688,11 +1688,11 @@ export const maleMaskedOG = {
     "Canine Rubi.png",
     "Climber.png",
     "Double Ring.png",
-    "Duck Fluorite  - copia.png",
-    "Duck Fluorite .png",
-    "Duck Gold - copia.png",
+    "placeholder",
+    "Duck Fluorite.png",
+    "placeholder",
     "Duck Gold.png",
-    "Duck Rubi - copia.png",
+    "placeholder",
     "Duck Rubi.png",
     "Gold Ring.png",
     "Gold and Turquoise Disc.png",
@@ -1768,7 +1768,7 @@ export const maleMaskedOG = {
     "King Crown Red.png",
     "King Red.png",
     "Owl Blue.png",
-    "Owl Blue2.png",
+    "placeholder",
     "Owl Bright.png",
     "Owl Brown.png",
     "Owl Gray.png",
@@ -1815,7 +1815,7 @@ export const maleMaskedOG = {
     "Rare Mosaic Gold.png"
   ]
 }
-export const maleNoMaskedOG = {
+const maleNoMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1990,7 +1990,7 @@ export const maleNoMaskedOG = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -2062,7 +2062,7 @@ export const maleNoMaskedOG = {
     "Boards Ivory.png",
     "Boards Jade.png",
     "Boards Obsidian.png",
-    "Boards Rubi 2.png",
+    "placeholder",
     "Boards Rubi.png",
     "Boards Side Gold.png",
     "Boards Turquoise.png",
@@ -2356,7 +2356,7 @@ export const maleNoMaskedOG = {
     "None.png"
   ]
 }
-export const MaleOpenMaskedOG = {
+const MaleOpenMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -2526,7 +2526,7 @@ export const MaleOpenMaskedOG = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -2596,7 +2596,7 @@ export const MaleOpenMaskedOG = {
     "Boards Ivory.png",
     "Boards Jade.png",
     "Boards Obsidian.png",
-    "Boards Rubi 2.png",
+    "placeholder",
     "Boards Rubi.png",
     "Boards Side Gold.png",
     "Boards Turquoise.png",
@@ -2624,7 +2624,7 @@ export const MaleOpenMaskedOG = {
     "Peebles Red.png",
     "Peebles Sand.png",
     "Tight Black.png",
-    "Tight Glowing  Opal.png",
+    "Tight Glowing Opal.png",
     "Tight Gold.png",
     "Tight Lime Stone.png",
     "Tight Rubi.png",
@@ -2816,7 +2816,7 @@ export const MaleOpenMaskedOG = {
     "Canine Rubi.png",
     "Climber.png",
     "Double Ring.png",
-    "Duck Fluorite .png",
+    "Duck Fluorite.png",
     "Duck Gold.png",
     "Duck Rubi.png",
     "Gold Ring.png",
@@ -2840,3 +2840,4 @@ export const MaleOpenMaskedOG = {
     "None.png"
   ]
 }
+module.exports = { femaleMaskedOG, femaleNoMaskedOG, maleMaskedOG, maleNoMaskedOG, MaleOpenMaskedOG }

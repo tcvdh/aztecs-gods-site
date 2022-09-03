@@ -1,4 +1,4 @@
-export const femaleMasked = {
+const femaleMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -168,7 +168,7 @@ export const femaleMasked = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -487,7 +487,7 @@ export const femaleMasked = {
     "Balls.png",
     "Big Purple Feather.png",
     "Climber.png",
-    "Duck Fluorite .png",
+    "Duck Fluorite.png",
     "Duck Gold.png",
     "Duck Rubi.png",
     "Feather Pink.png",
@@ -579,7 +579,7 @@ export const femaleMasked = {
     "Jaguar Yellow Green.png",
     "Jaguar Yellow Red.png",
     "Owl Blue.png",
-    "Owl Blue2.png",
+    "placeholder",
     "Owl Bright.png",
     "Owl Brown.png",
     "Owl Gray.png",
@@ -636,7 +636,7 @@ export const femaleMasked = {
     "placeholder"
   ]
 }
-export const femaleNoMasked = {
+const femaleNoMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -806,7 +806,7 @@ export const femaleNoMasked = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -1166,7 +1166,7 @@ export const femaleNoMasked = {
     "Balls.png",
     "Big Purple Feather.png",
     "Climber.png",
-    "Duck Fluorite .png",
+    "Duck Fluorite.png",
     "Duck Gold.png",
     "Duck Rubi.png",
     "Feather Pink.png",
@@ -1202,7 +1202,7 @@ export const femaleNoMasked = {
     "None.png"
   ]
 }
-export const maleMasked = {
+const maleMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1377,7 +1377,7 @@ export const maleMasked = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -1449,7 +1449,7 @@ export const maleMasked = {
     "Boards Ivory.png",
     "Boards Jade.png",
     "Boards Obsidian.png",
-    "Boards Rubi 2.png",
+    "placeholder",
     "Boards Rubi.png",
     "Boards Side Gold.png",
     "Boards Turquoise.png",
@@ -1688,11 +1688,11 @@ export const maleMasked = {
     "Canine Rubi.png",
     "Climber.png",
     "Double Ring.png",
-    "Duck Fluorite  - copia.png",
-    "Duck Fluorite .png",
-    "Duck Gold - copia.png",
+    "placeholder",
+    "Duck Fluorite.png",
+    "placeholder",
     "Duck Gold.png",
-    "Duck Rubi - copia.png",
+    "placeholder",
     "Duck Rubi.png",
     "Gold Ring.png",
     "Gold and Turquoise Disc.png",
@@ -1768,7 +1768,7 @@ export const maleMasked = {
     "King Crown Red.png",
     "King Red.png",
     "Owl Blue.png",
-    "Owl Blue2.png",
+    "placeholder",
     "Owl Bright.png",
     "Owl Brown.png",
     "Owl Gray.png",
@@ -1815,7 +1815,7 @@ export const maleMasked = {
     "placeholder"
   ]
 }
-export const maleNoMasked = {
+const maleNoMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1990,7 +1990,7 @@ export const maleNoMasked = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -2062,7 +2062,7 @@ export const maleNoMasked = {
     "Boards Ivory.png",
     "Boards Jade.png",
     "Boards Obsidian.png",
-    "Boards Rubi 2.png",
+    "placeholder",
     "Boards Rubi.png",
     "Boards Side Gold.png",
     "Boards Turquoise.png",
@@ -2090,7 +2090,7 @@ export const maleNoMasked = {
     "Peebles Red.png",
     "Peebles Sand.png",
     "Tight Black.png",
-    "Tight Glowing  Opal.png",
+    "Tight Glowing Opal.png",
     "Tight Gold.png",
     "Tight Lime Stone.png",
     "Tight Rubi.png",
@@ -2356,7 +2356,7 @@ export const maleNoMasked = {
     "None.png"
   ]
 }
-export const MaleOpenMasked = {
+const MaleOpenMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -2526,7 +2526,7 @@ export const MaleOpenMasked = {
     "Blaze Green Yellow.png",
     "Blaze Green.png",
     "Blaze Grey and Gold.png",
-    "Blaze Red .png",
+    "Blaze Red.png",
     "Blaze Violet Pastel.png",
     "Blaze Yellow.png",
     "Flare Black.png",
@@ -2596,7 +2596,7 @@ export const MaleOpenMasked = {
     "Boards Ivory.png",
     "Boards Jade.png",
     "Boards Obsidian.png",
-    "Boards Rubi 2.png",
+    "placeholder",
     "Boards Rubi.png",
     "Boards Side Gold.png",
     "Boards Turquoise.png",
@@ -2816,7 +2816,7 @@ export const MaleOpenMasked = {
     "Canine Rubi.png",
     "Climber.png",
     "Double Ring.png",
-    "Duck Fluorite .png",
+    "Duck Fluorite.png",
     "Duck Gold.png",
     "Duck Rubi.png",
     "Gold Ring.png",
@@ -2840,3 +2840,4 @@ export const MaleOpenMasked = {
     "None.png"
   ]
 }
+module.exports = { femaleMasked, femaleNoMasked, maleMasked, maleNoMasked, MaleOpenMasked }
