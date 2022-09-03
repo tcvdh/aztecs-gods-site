@@ -1,4 +1,4 @@
-const femaleMasked = {
+export const femaleMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -636,7 +636,7 @@ const femaleMasked = {
     "placeholder"
   ]
 }
-const femaleNoMasked = {
+export const femaleNoMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1202,7 +1202,7 @@ const femaleNoMasked = {
     "None.png"
   ]
 }
-const maleMasked = {
+export const maleMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1815,7 +1815,7 @@ const maleMasked = {
     "placeholder"
   ]
 }
-const maleNoMasked = {
+export const maleNoMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -2356,7 +2356,7 @@ const maleNoMasked = {
     "None.png"
   ]
 }
-const MaleOpenMasked = {
+export const MaleOpenMasked = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",

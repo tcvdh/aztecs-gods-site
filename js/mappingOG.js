@@ -1,4 +1,4 @@
-const femaleMaskedOG = {
+export const femaleMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -636,7 +636,7 @@ const femaleMaskedOG = {
     "Rare Mosaic Gold.png"
   ]
 }
-const femaleNoMaskedOG = {
+export const femaleNoMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1202,7 +1202,7 @@ const femaleNoMaskedOG = {
     "None.png"
   ]
 }
-const maleMaskedOG = {
+export const maleMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -1815,7 +1815,7 @@ const maleMaskedOG = {
     "Rare Mosaic Gold.png"
   ]
 }
-const maleNoMaskedOG = {
+export const maleNoMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",
@@ -2356,7 +2356,7 @@ const maleNoMaskedOG = {
     "None.png"
   ]
 }
-const MaleOpenMaskedOG = {
+export const MaleOpenMaskedOG = {
   "Background": [
     "Aqua.png",
     "Aristocracy.png",

@@ -92,8 +92,8 @@ function returnSelectedTypeNumber() {
 
 import { ABI, GODABI } from './abi.js';
 
-import { femaleMasked, femaleNoMasked, maleMasked, maleNoMasked, MaleOpenMasked } from "./mapping.js";
-import { femaleMaskedOG, femaleNoMaskedOG, maleMaskedOG, maleNoMaskedOG, MaleOpenMaskedOG } from "./mappingOG.js";
+import { femaleMasked, femaleNoMasked, maleMasked, maleNoMasked, MaleOpenMasked } from "./mapping.js?ver=1.1.0";
+import { femaleMaskedOG, femaleNoMaskedOG, maleMaskedOG, maleNoMaskedOG, MaleOpenMaskedOG } from "./mappingOG.js?ver=1.1.0";
 
 const Web3Modal = window.Web3Modal.default;
 const WalletConnectProvider = window.WalletConnectProvider.default;
