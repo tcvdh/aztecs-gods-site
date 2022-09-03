@@ -189,8 +189,9 @@ async function loginWeb3() {
     walletIndex = addresses.lastIndexOf(walletAddress)
     console.log(walletIndex)
     if(walletIndex >= 0) {
-        const minted = await infuraContract.claimedBitMapFree(walletAddress)
+        const minted = await infuraContract.claimedBitMapFree(walletIndex)
         allowedAmount = amount[walletIndex] 
+        console.log(minted.toNumber())
         document.getElementById('amounttext').innerHTML = `You can still mint ${allowedAmount - minted} Aztec God(s)`;
         document.getElementById("mintNow").style.visibility = "visible";
         document.getElementById("randomIt").style.visibility = "visible";
