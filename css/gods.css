@@ -1,14 +1,16 @@
 .modal_buttons {
     top: 10%;
-    left: 1%;
-    right: 43%;
+    left: 1.8%;
+    /* right: 43%; */
     position: fixed;
     max-height: 85%;
     padding-top: 0.5%;
+    /* width: */
+    max-width: 50%;
     /* padding: 5%; */
     padding-bottom: 0.5%;
-    /* padding-left: 4px;
-    padding-right: 4px; */
+    padding-left: 5px;
+    padding-right: 5px;
     /* margin-top: 50px; */
     z-index: 9999;
     overflow: auto;
@@ -68,6 +70,6 @@
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    width: 75%;
+    width: 100%;
     /* Could be more or less, depending on screen size */
 }

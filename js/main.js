@@ -104,6 +104,7 @@ var provider;
 var apiReturn;
 var allowedAmount;
 var walletIndex;
+var paid = 0;
 
 var walletAddress = "0x";
 getTotalSupply();
@@ -186,15 +187,31 @@ async function loginWeb3() {
     // document.getElementById("genImg").src = "../img/clickGenerate.png";
     // start();
 
+    await checkWL()
+}
+
+async function checkWL() {
     walletIndex = addresses.lastIndexOf(walletAddress)
     console.log(walletIndex)
     if(walletIndex >= 0) {
         const minted = await infuraContract.claimedBitMapFree(walletIndex)
         allowedAmount = amount[walletIndex] 
         console.log(minted.toNumber())
-        document.getElementById('amounttext').innerHTML = `You can still mint ${allowedAmount - minted} Aztec God(s)`;
+        if(allowedAmount - minted > 0) {
+            document.getElementById('amounttext').innerHTML = `You can still mint ${allowedAmount - minted} Aztec God(s)`;
+            document.getElementById("mintNow").style.visibility = "visible";
+            document.getElementById("randomIt").style.visibility = "visible";
+        } else {
+            document.getElementById('amounttext').innerHTML = `You can mint at a reduced price of 0.02Ξ`;
+            document.getElementById("mintNow").style.visibility = "visible";
+            document.getElementById("randomIt").style.visibility = "visible";
+            paid = 1
+        }
+    } else {
+        document.getElementById('amounttext').innerHTML = `You can mint at a reduced price of 0.02Ξ`;
         document.getElementById("mintNow").style.visibility = "visible";
         document.getElementById("randomIt").style.visibility = "visible";
+        paid = 1
     }
 }
 
@@ -330,6 +347,15 @@ async function random() {
 
 async function mint() {
     document.getElementById("mintNow").value = "Please Wait..."
+    var uniqueDNA = [];
+    uniqueDNA.push(returnSelectedTypeNumber())
+    uniqueDNA.push(layerId[0])
+    uniqueDNA.push(layerId[1])
+    uniqueDNA.push(layerId[2])
+    uniqueDNA.push(layerId[3])
+    uniqueDNA.push(layerId[5])
+    uniqueDNA.push(layerId[6])
+    uniqueDNA.push(layerId[9])
     for (let i = 0; i < layerId.length; i++) {
         if(layerId[i] > 500) {
             console.log(layerId[i])
@@ -341,11 +367,12 @@ async function mint() {
     const idString = layerId.join();
     console.log(idString)
     const DNAToCheck = `${returnSelectedTypeNumber()}${layerId.join("")}`
+    console.log(uniqueDNA.join(''))
 
     const signer = provider.getSigner();
     const mintContract = new ethers.Contract("0xA031Be7C66fE1d915A68Aaea7A7597f1b612e699", GODABI, signer)
 
-    const DNAcheck = await mintContract.DNAexists(DNAToCheck);
+    const DNAcheck = await mintContract.DNAexists(uniqueDNA.join(''));
     console.log(DNAcheck)
 
     if(DNAcheck == true) {
@@ -422,7 +449,16 @@ async function freeMint() {
     console.log(receipt);
     document.getElementById("success").style.visibility = "visible"
     document.getElementById("mintNow").value = "MINT IT NOW"
+    await checkWL()
 
+}
+
+async function mintmanager() {
+    if(paid == 0) {
+        freeMint()
+    } else {
+        mint()
+    }
 }
 
 
@@ -444,7 +480,7 @@ document.getElementById("myModal").onclick = log;
 document.getElementById("connect").onclick = main;
 document.getElementById("connect2").onclick = main;
 // document.getElementById("hellosir").onclick = log;
-document.getElementById("mintNow").onclick = freeMint;
+document.getElementById("mintNow").onclick = mintmanager;
 
 document.getElementById("randomIt").onclick = random;
 
