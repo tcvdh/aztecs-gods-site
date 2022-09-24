@@ -1,4 +1,4 @@
-import { addresses, amount } from './custommerkle.js?ver=1.10.0'
+import { addresses, amount } from './custommerkle.js?ver=1.12.0'
 let whitelistAddresses = []
 for (let i = 0; i < addresses.length; i++) {
   whitelistAddresses.push(ethers.utils.solidityKeccak256(['uint256', 'address', 'uint256'], [i, addresses[i], amount[i]]))
@@ -72,19 +72,19 @@ function returnSelectedType() {
 
 function returnSelectedTypeNumber() {
     if(selectedType == "FemaleMasked") {
-        return "01";
+        return "1";
     }
     else if(selectedType == "FemaleNoMasked") {
-        return "02";
+        return "2";
     }
     else if(selectedType == "MaleMasked") {
-        return "03";
+        return "3";
     }
     else if(selectedType == "MaleNoMasked") {
-        return "04";
+        return "4";
     }
     else if(selectedType == "MaleOpenMasked") {
-        return "05";
+        return "5";
     } else {
         return "SHIT"
     }
@@ -353,8 +353,8 @@ async function mint() {
     uniqueDNA.push(layerId[1])
     uniqueDNA.push(layerId[2])
     uniqueDNA.push(layerId[3])
-    uniqueDNA.push(layerId[5])
-    uniqueDNA.push(layerId[6])
+    uniqueDNA.push(layerId[4])
+    uniqueDNA.push(layerId[7])
     uniqueDNA.push(layerId[9])
     for (let i = 0; i < layerId.length; i++) {
         if(layerId[i] > 500) {
@@ -407,8 +407,8 @@ async function freeMint() {
     uniqueDNA.push(layerId[1])
     uniqueDNA.push(layerId[2])
     uniqueDNA.push(layerId[3])
-    uniqueDNA.push(layerId[5])
-    uniqueDNA.push(layerId[6])
+    uniqueDNA.push(layerId[4])
+    uniqueDNA.push(layerId[7])
     uniqueDNA.push(layerId[9])
     for (let i = 0; i < layerId.length; i++) {
         if(layerId[i] > 500) {
