@@ -1,4 +1,4 @@
-import { addresses, amount } from './kidsmerkle.js?ver=1.0.0'
+import { addresses, amount } from './kidsmerkle.js?ver=1.1.0'
 import { KIDSABI } from './abi/kidsabi.js';
 
 let whitelistAddresses = []
