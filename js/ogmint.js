@@ -79,7 +79,7 @@ async function checkFreeMints() {
 
 async function getTotalSupply() {
   const totalSupply = await infuraContract.totalSupply()
-  document.getElementById('totalSupply').innerHTML = `Minted: ${totalSupply}/500`;
+  document.getElementById('totalSupply').innerHTML = `Minted: ${totalSupply}/203`;
   }
 
   async function mint() {
@@ -169,7 +169,7 @@ async function start() {
     document.getElementById('amounttext').innerHTML = `Please select the amount you want to mint:`;
     document.getElementById("amount").style.visibility = "visible";
     document.getElementById("amounttext").style.visibility = "visible";
-    document.getElementById('main').innerHTML = "MINT";
+    // document.getElementById('main').innerHTML = "MINT";
   }
 
   var freeMints = await checkFreeMints();
@@ -177,12 +177,12 @@ async function start() {
     document.getElementById('amounttext').innerHTML = `You can mint ${freeMints} Aztecs for free!!`;
     document.getElementById("amount").style.visibility = "visible";
     document.getElementById("amounttext").style.visibility = "visible";
-    document.getElementById('main').innerHTML = `MINT FOR FREE`;
+    // document.getElementById('main').innerHTML = `MINT FOR FREE`;
   }
 }
 
 
 
 
-document.getElementById("main").onclick = main;
-document.getElementById("connect").onclick = connect;
+// document.getElementById("main").onclick = main;
+// document.getElementById("connect").onclick = connect;
