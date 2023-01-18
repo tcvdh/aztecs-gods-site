@@ -1,4 +1,4 @@
-import { addresses, amount } from './custommerkle.js?ver=1.26.0'
+import { addresses, amount } from './custommerkle.js?ver=1.27.0'
 let whitelistAddresses = []
 for (let i = 0; i < addresses.length; i++) {
   whitelistAddresses.push(ethers.utils.solidityKeccak256(['uint256', 'address', 'uint256'], [i, addresses[i], amount[i]]))
